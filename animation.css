@@ -1,0 +1,46 @@
+@keyframes first-shoot-mobile {
+    from {
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        transform: none;
+    }
+    60% {
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        transform: none;
+    }
+    to {
+        top: 5%;
+        left: 50%;
+        width: 30vw;
+        height: 30vw;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes first-shoot-desktop {
+    from {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: none;
+    }
+    60% {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: none;
+    }
+    to {
+        top: 10%;
+        width: 10vw;
+        height: 10vw;
+        transform: translateX(-50%);
+    }
+}
