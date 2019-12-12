@@ -5,82 +5,352 @@
 }
 
 body {
-    background: rgb(22, 22, 22);
-    /* background-image: url("imgs/2.gif"); */ */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #10122f;
 }
 
-.image-container {
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
-    width: 35vw;
-    /* transform: rotate(-15deg); */
-    height: 40vw;
-    background: white;
-    z-index: 2;
+.main {
+    width: 100vw;
+    height: 100vh;;
+    background-color: #8175d9;
+    overflow: hidden;
 }
 
-.image {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30vw;
-    height: 30vw;
-    background: url("imgs/71.gif") no-repeat;
-    background-size: cover;
-    animation: first-shoot-mobile 5s 1;
-}
-
-.image-text {
-    font-family: 'Indie Flower', cursive;
+.break {
+    margin: 15px 0;
     width: 100%;
-    text-align: right;
+}
+
+.wood {
+    position: relative;
+    height: 65vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.trees {
+    position: absolute;
+    bottom: 69%;
+    width: 200vw;
+    left: -50vw;
+
+}
+
+.layer0 {
     position: absolute;
     bottom: 0;
-    right: 1.7vw;
-    font-size: 0.9em;
+    height: 70%;
+    background-color: #10122f;
+    width: 100%;
 }
 
-@media (min-width: 768px) {
-    .image-container {
-        width: 13vw;
-        height: 15vw;
-    }
+.sky {
+    position: relative;
+    height: 40vh;
+    margin-bottom: -5vh;
+    width: 100vw;
+    z-index: 1;
 
-    .image {
-        top: 10%;
-        width: 10vw;
-        height: 10vw;
-        animation: first-shoot-desktop 5s 1;
-    }
+    background: rgb(28,24,41);
+    background: linear-gradient(180deg, rgba(28,24,41,0.9248074229691877) 0%, rgba(85,80,101,0.7147233893557423) 59%, rgba(110,105,128,0.36738445378151263) 81%, rgba(248,254,255,0) 100%);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 30vh;
+}
+
+.starfall {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
 }
 
 .star {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url("imgs/3.gif"); */
+    width: 30px;
+    height: 30px;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('imgs/stars/shine_star.png');
+    opacity: 0;
 }
 
-.wood {
+.star1 {
+    animation: shoot0 3s ease 3s 1;
+}
+
+.star2 {
+    animation-name: shoot1;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    
+}
+
+.star3 {
+    animation-name: shoot2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+.star4 {
+    animation-name: shoot3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    
+}
+.star5 {
+    animation-name: shoot4;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 17s;
+}
+.star6 {
+    animation-name: shoot5;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+    
+}
+.star7 {
+    animation-name: shoot6;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 25s;
+    
+}
+.star8 {
+    animation-name: shoot7;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 30s;
+}
+.star9 {
+    animation-name: shoot8;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 32s;
+    
+}
+.star10 {
+    animation-name: shoot9;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 37s;
+}
+.star11 {
+    animation-name: shoot10;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 40s;
+}
+.star12 {
+    animation-name: shoot11;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 45s;
+}
+.star13 {
+    animation-name: shoot12;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 52s;
+    
+}
+.star14 {
+    animation-name: shoot13;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 55s;
+}
+.star15 {
+    animation-name: shoot14;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 61s;
+}
+.star16 {
+    animation-name: shoot15;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 65s;
+    
+}
+.star17 {
+    animation-name: shoot16;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-delay: 69s;
+}
+
+.text {
+    box-sizing: border-box;
+    color: rgb(233, 233, 193);
+    width: 100vw;
+    padding: 0 15vw;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.message {
+    display: none;
+    font-family: monospace;
+    font-size: 1.3em;
+    background: #10122f;
+    padding-bottom: 50px;
+}
+
+.click {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30vh;
-    background: url("imgs/wood.png");
-    background-size: cover;
+    bottom: 40px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    background-image: url('imgs/click.png');
+    background-size: contain;
     background-repeat: no-repeat;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
-.relative {
-    position: relative;
-    height: 100%;
-    width: 100%;
+.click input {
+    display: none;
+    width: 100px;
+    height: 50px;
+    line-height: 25px;
+    font-size: 2em;
+    text-align: center;
+    
+    box-sizing: border-box;
+    padding: 0 15%;
+    color: wheat;
+    position: absolute;
+    text-align: center;
+    background: rgb(93, 95, 121);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(73, 75, 99);
+    outline: none;
+    opacity: 1;
+}
+
+@media (min-width: 420px) {
+    .click {
+        width: 125px;
+        height: 70px;
+        bottom: 5vh;
+        right: 3vw;
+    }
+}
+
+@media (min-width: 480px) {
+    .sky {
+        height: 40vh;
+    }
+
+    .stars {
+        height: 35vh;
+    }
+
+    .wood {
+        height: 65vh;
+    }
+
+    .layer0 {
+        height: 50%;
+    }
+
+    .trees {
+        bottom: 49%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sky {
+        height: 45vh;
+        margin-bottom: -30vh;
+    }
+
+    .stars {
+        left: 0;
+        width: 100%;
+    }
+
+    .wood {
+        height: 85vh;
+    }
+
+    .trees {
+        width: 100%;
+        left: 0;
+    }
+
+    .trees:nth-child(2) {
+        bottom: 45%;
+    }
+
+    .trees:first-child {
+        bottom: 40%;
+    }
+
+    .stars {
+        height: 40vh;
+        opacity: 0.7;
+    }
+
+    .text {
+        font-size: 2em;
+    }
+
+    .click {
+        width: 125px;
+        height: 70px;
+        bottom: 7vh;
+        right: 7vw;
+    }
+
+    .click input {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sky {
+        height: 55vh;
+        margin-bottom: -40vh;
+    }
+
+    .trees:nth-child(2) {
+        bottom: 35%;
+    }
+
+    .trees:first-child {
+        bottom: 30%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .message {
+        text-align: justify;
+    }
 }

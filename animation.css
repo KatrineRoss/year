@@ -1,46 +1,440 @@
-@keyframes first-shoot-mobile {
+@keyframes hide {
     from {
-        top: 50%;
-        left: 0;
-        width: 100vw;
-        height: 50vh;
-        transform: none;
-    }
-    60% {
-        top: 50%;
-        left: 0;
-        width: 100vw;
-        height: 50vh;
-        transform: none;
+        opacity: 1;
     }
     to {
-        top: 5%;
-        left: 50%;
-        width: 30vw;
-        height: 30vw;
-        transform: translateX(-50%);
+        opacity: 0;
     }
 }
 
-@keyframes first-shoot-desktop {
+@keyframes shoot0 {
     from {
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        transform: none;
+        opacity: 1;
+        top: -50px;
+        left: 20vw;
+        transform: rotate(0);
     }
-    60% {
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        transform: none;
+    20% {
+        opacity: 1;
     }
     to {
-        top: 10%;
-        width: 10vw;
-        height: 10vw;
-        transform: translateX(-50%);
+        top: 100%;
+        left: 90vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot1 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 55vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 0.5;
+    }
+    15% {
+        top: 75%;
+        left: 80vw;
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 75%;
+        left: 80vw;
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot2 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 105vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        top: 100%;
+        left: 10vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 10vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot3 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 105vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    35% {
+        top: 100%;
+        left: 100vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 100vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot4 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 105vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        top: 70%;
+        left: -30vw;
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 70%;
+        left: -30vw;
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot5 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 102vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 15vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 15vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot6 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 30vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 21vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 21vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot7 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 56vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: -14vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: -14vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot8 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 12vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 90vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 90vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot9 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: -29vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    27% {
+        top: 100%;
+        left: 30vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 30vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot10 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 125vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        top: 100%;
+        left: 15vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 15vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot11 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 100vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 33vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 33vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot12 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 70vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    22% {
+        top: 100%;
+        left: 134vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 134vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot13 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 45vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: -10vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 0;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot14 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 60vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    23% {
+        top: 100%;
+        left: 130vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 130vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot15 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 13vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 89vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 89vw;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes shoot16 {
+    from {
+        opacity: 1;
+        top: -50px;
+        left: 105vw;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        top: 100%;
+        left: 0;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    to {
+        top: 100%;
+        left: 0;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
